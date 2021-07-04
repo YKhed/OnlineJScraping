@@ -11,7 +11,9 @@ class Hespress1Spider(scrapy.Spider):
         comments = response.xpath("//ul[@class='comment-list hide-comments ']/li")
         for comment in comments :
             content = comment.xpath(".//div/div[@class='comment-text']/p/text()").get()
+            ratio = comment.xpath(".//div/div[@class='comment-footer row']/div/span[@class='comment-recat-number']/text()").get()
             yield {
-                'content' : content
+                'content' : content,
+                'ratio' : ratio
             }
 
