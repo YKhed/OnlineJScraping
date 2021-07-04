@@ -1,10 +1,10 @@
-## This is a web scraping project
+# This is a web scraping project
 
-# To install scrapy :
+## To install scrapy (1.6):
     conda install -c conda-forge scrapy==1.6
-# Libraries/tools to install :
+## Libraries/tools to install :
     pylint
     autopep8   
     pymongo
-    dsnpython
+    dnspython
     
