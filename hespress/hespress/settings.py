@@ -64,7 +64,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'hespress.pipelines.MongodbPipeline': 300,
+   'hespress.pipelines.SQLlitePipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
